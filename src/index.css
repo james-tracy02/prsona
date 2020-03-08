@@ -1,0 +1,106 @@
+body {
+}
+
+.header {
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.brand {
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  margin-left: 20vw;
+}
+
+hr {
+  background-color: #CCCCCC;
+}
+
+.description {
+  padding: 20px 10px 10px 10px;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.create-quiz {
+  padding: 20px;
+}
+
+.quiz-tool {
+  padding: 20px;
+}
+
+.label {
+  font-weight: 500;
+  color: #007BFF;
+}
+
+.result, .question {
+  background-color: #D3D3D3;
+  padding: 20px;
+  margin: 20px;
+}
+
+.form-control {
+  border-radius: 0px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.dark-form {
+  border: none;
+}
+
+.form-control:focus {
+  color: #000000;
+}
+
+.quiz-title {
+  font-size: 28px;
+  border: none;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.minor-title {
+  font-size: 28px;
+}
+
+.question-text {
+  font-size: 22px;
+}
+
+.answer {
+  background-color: #AFAFAF;
+  padding: 10px;
+  margin: 20px 0 20px 60px;
+}
+
+.weight {
+  margin-left: 60px;
+}
+
+.points-label {
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.form-control:focus {
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
