@@ -10,7 +10,6 @@ body {
   color: white;
   font-size: 42px;
   font-weight: bold;
-  margin-left: 20vw;
 }
 
 hr {
@@ -28,6 +27,11 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 h3 {
   font-size: 20px;
   font-weight: bold;;
@@ -38,10 +42,6 @@ h4 {
   font-weight: bold;
 }
 
-.create-quiz {
-  padding: 20px;
-}
-
 .quiz-tool {
   padding: 20px;
 }
@@ -49,6 +49,10 @@ h4 {
 .label {
   font-weight: 500;
   color: #007BFF;
+}
+
+.quiz {
+  margin: 20px;
 }
 
 .result, .question {
@@ -92,7 +96,7 @@ h4 {
 }
 
 .weight {
-  margin-left: 60px;
+  margin: 20px 0 20px 60px;
 }
 
 .points-label {
@@ -103,4 +107,18 @@ h4 {
 .form-control:focus {
   border-color: #FF0000;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.center-block {
+  margin: 0 auto;
+}
+
+.answer-btn {
+  border-radius: 0px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
 }

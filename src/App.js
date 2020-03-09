@@ -1,15 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './containers/Home';
-import CreateQuiz from './containers/CreateQuiz';
+import Home from './components/Home';
+import CreateQuiz from './components/CreateQuiz';
+import Success from './components/Success';
+import TakeQuiz from './components/TakeQuiz';
 
 function App() {
   return (
     <Router>
     <Header />
       <Route exact path="/" component={Home} />
-      <Route exact path="/create/quiz" component={CreateQuiz} />
+      <Route path="/create" component={CreateQuiz} />
+      <Route path="/success" component={Success} />
+      <Route path="/take/:id" component={TakeQuiz} />
     </Router>
   );
 }
