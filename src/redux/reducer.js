@@ -109,6 +109,11 @@ export default function reducer(state = initialState, action) {
             .weights.splice(action.index, 1);
       });
 
+    case 'LOAD_QUIZ':
+      return produce(state, draft => {
+        draft.quiz = action.quiz;
+      });
+
     default:
       return state;
   }

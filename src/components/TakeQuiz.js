@@ -82,7 +82,16 @@ export default class TakeQuiz extends Component {
                 {results[0].description}
               </p>
             </div>
-            <Link className="btn btn-dark" to="/">Home</Link>
+            <h3>Other results:</h3>
+            {results.slice(1).map((result, i) => {
+              return (
+                <div>
+                  <h4>#{i + 2} - {result.name}</h4>
+                </div>
+              );
+            })}
+            <hr />
+            <Link className="btn btn-dark mb-3" to="/">Home</Link>
           </Container>
         )
       } else {
@@ -104,16 +113,16 @@ export default class TakeQuiz extends Component {
         </h2>
         <hr />
         {this.state.quiz.questions[this.state.question].answers.map((answer, i) => {
-          return <Button
+          return <button
           variant="light"
           size="lg"
-          className="answer-btn btn-block"
+          className="answer-btn"
           onClick={() => {
             this.recordAnswer(i)
             this.nextQuestion()
           }}>
           {answer.text}
-          </Button>
+          </button>
         })}
       </Container>
     )

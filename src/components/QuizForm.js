@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 function mapStateToProps(state) {
   return {
-    quiz: state,
+    quiz: state.quiz,
   };
 }
 

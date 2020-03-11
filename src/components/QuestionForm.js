@@ -25,7 +25,7 @@ class QuestionForm extends Component {
             className="question-text dark-form form-control"
             type="text"
             placeholder="Question"
-            value={this.props.text}
+            value={this.props.question.text}
             onChange={(e) => this.props.changeQuestion(this.props.index, 'text', e.target.value)}/>
           </Form.Group>
         </Form>

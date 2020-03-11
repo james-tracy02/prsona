@@ -14,8 +14,13 @@ function getQuiz(id) {
   return axios.get(`${url}/quizzes/${id}`);
 }
 
+function updateQuiz(id, quiz) {
+  return axios.put(`${url}/quizzes/${id}`, quiz);
+}
+
 export default {
   publishQuiz,
   getAllQuizzes,
   getQuiz,
+  updateQuiz,
 };

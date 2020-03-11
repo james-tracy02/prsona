@@ -41,8 +41,13 @@ class CreateQuiz extends Component {
   publishQuiz() {
     const err = this.validateQuiz(this.props.quiz);
     if(!err) {
-      quizService.publishQuiz(this.props.quiz)
-      .then(() => this.setState({ redirect: '/success' }));
+      if(this.props.quiz.id) {
+        quizService.updateQuiz(this.props.quiz.id, this.props.quiz)
+        .then(() => this.setState({ redirect: '/success' }));
+      } else {
+        quizService.publishQuiz(this.props.quiz)
+        .then(() => this.setState({ redirect: '/success' }));
+      }
     }
   }
 

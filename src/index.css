@@ -114,11 +114,25 @@ h4 {
 }
 
 .answer-btn {
-  border-radius: 0px;
+  background-color: #E8ECEF;
+  width: 100%;
+  border: none;
+  height: 3.6em;
+  margin: 5px;
+  font-size: 1.15em;
+  outline: none !important;
+}
+
+.answer-btn:hover {
+  background-color: #D9DBDD
 }
 
 .card-img-top {
     width: 100%;
     height: 20vh;
     object-fit: cover;
+}
+
+.mybtn {
+
 }
