@@ -82,11 +82,11 @@ export default class TakeQuiz extends Component {
                 {results[0].description}
               </p>
             </div>
-            <h3>Other results:</h3>
-            {results.slice(1).map((result, i) => {
+            <h3>All Results:</h3>
+            {results.map((result, i) => {
               return (
                 <div>
-                  <h4>#{i + 2} - {result.name}</h4>
+                  <h4>#{i + 1} - {result.name} ({this.state.points[result.categoryIndex]})</h4>
                 </div>
               );
             })}

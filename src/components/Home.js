@@ -35,6 +35,7 @@ export default class Home extends Component {
               </Col>
             );
           })}
+          {(this.state.quizzes.length < 1) ? <h4>Loading quizzes. Please wait...</h4> : <span />}
           </Row>
         </div>
       </Container>
